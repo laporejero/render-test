@@ -37,8 +37,8 @@ const Note = mongoose.model('Note', noteSchema)
 
 // Fetching objects from the database
 Note.find({ important: false }).then(result => {
-    result.forEach(note => {
-        console.log(note)
-    })
-    mongoose.connection.close()
+  result.forEach(note => {
+    console.log(note)
+  })
+  mongoose.connection.close()
 })
